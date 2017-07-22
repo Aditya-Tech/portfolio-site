@@ -1,0 +1,34 @@
+
+
+.code {
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+}
+
+
+body {
+  background-color: #31343F;
+}
+
+.container p, h1 {
+  display:inline;
+}
+
+.tag {
+  color: #B9D4F5;
+}
+
+.tagname {
+  color: #CF6050;
+}
+
+.htmltext {
+  color: #B9D4F5;
+}
+
+.nest1 {
+  margin-left: 40px;
+}
+
+.nest2 {
+  margin-left: 80px;
+}
