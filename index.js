@@ -43,3 +43,31 @@ function showAllscriptsInfo() {
     $(current).fadeIn();
   })
 }
+
+function showFridaydInfo() {
+  hideCurrent(function() {
+    current = "#fridayd";
+    $(current).fadeIn();
+  })
+}
+
+function showIntro() {
+  hideCurrent(function() {
+    current = "#intro";
+    $(current).fadeIn();
+  })
+}
+
+function showProj1() {
+  hideCurrent(function() {
+    current = "#theglobalredirect";
+    $(current).fadeIn();
+  })
+}
+
+function showProj2() {
+  hideCurrent(function() {
+    current = "#knowyouropenings";
+    $(current).fadeIn();
+  })
+}

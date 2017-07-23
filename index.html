@@ -27,7 +27,7 @@
         <div id="name" class="container nest1">
           <p>
             <p class="tag">&lt;</p><p class="tagname">Name</p><p class="tag">&gt;</p>
-            <p class="htmltext"> aditya paruchuri </p>
+            <p class="htmltext"> Aditya Paruchuri </p>
             <p class="tag">&lt;/</p><p class="tagname">Name</p><p class="tag">&gt;</p>
           </p>
         </div>
@@ -94,12 +94,12 @@
             <p class="tag">&lt;</p><p class="tagname">Experience</p><p class="tag">&gt;</p>
               <div id="personalemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Work  </p><p class="from">from</p><p class="tag">=</p><p class="attr">"May 2017" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"Aug 2017"</p></p><p class="tag">&gt;</p>
-                  <p class="htmltext link" id="allscriptsinfo" onclick="showAllscriptsInfo();"> Allscripts </p>
+                  <p class="htmltext link" id="allscriptsinfotext" onclick="showAllscriptsInfo();"> Allscripts </p>
                 <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
               </div>
               <div id="schoolemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Work  </p><p class="from">from</p><p class="tag">=</p><p class="attr">"Aug 2015" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"Current"</p></p><p class="tag">&gt;</p>
-                  <p class="htmltext link"> Fridayd </p>
+                  <p class="htmltext link" id="fridaydinfotext" onclick="showFridaydInfo();"> Fridayd </p>
                 <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
               </div>
             <p class="tag">&lt;/</p><p class="tagname">Experience</p><p class="tag">&gt;</p>
@@ -110,12 +110,12 @@
             <p class="tag">&lt;</p><p class="tagname">Projects</p><p class="tag">&gt;</p>
               <div id="personalemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Project</p><p class="tag">&gt;</p>
-                  <a href="https://the-global-redirect.herokuapp.com" style="text-decoration:none;"><p class="htmltext link"> The Global Redirect </p></a>
+                  <p class="htmltext link" id="theglobalredirecttext" onclick="showProj1();"> The Global Redirect </p>
                 <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
               </div>
               <div id="schoolemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Project</p><p class="tag">&gt;</p>
-                  <a href="https://aditya-tech.github.io/know-your-openings" style="text-decoration:none;"><p class="htmltext link"> Know Your Openings </p></a>
+                  <p class="htmltext link" id="knowyouropeningstext" onclick="showProj2();"> Know Your Openings </p>
                 <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
               </div>
             <p class="tag">&lt;/</p><p class="tagname">Projects</p><p class="tag">&gt;</p>
@@ -136,7 +136,7 @@
 
       <div id="side-panel" class="side-panel col-md-4">
         <div id="closebutton" style="float:right;" onclick="hideSidePanel();">
-          <p>X</p>
+          <p id="x-button">X</p>
         </div>
         <div id="panel-text" class="panel-text">
 
@@ -152,20 +152,43 @@
             </ul>
           </div>
           <div id="allscripts">
-            <h2>test</h2>
+            <h1>Allscripts</h1>
+            <h2>Software Engineer Intern,</h2>
+            <h2>TouchWorks EHR Team</h2>
+            <h3>Tech used: JavaScript, Python, HTML, CSS, ASP.NET MVC 5, XML, XSLT, AngularJS</h3>
+            <ul>
+              <li>Developed a custom XML to HTML converter tool and test suite for TouchWork’s note feature</li>
+              <li>Converted the Prenatal module’s admin portal from Silverlight to HTML, CSS, and JavaScript</li>
+              <li>Gave biweekly product demos to the solutions management dept. and took part in daily scrums</li>
+            </ul>
+          </div>
+          <div id="fridayd">
+            <h1>Fridayd</h1>
+            <h2>Business Operations Specialist</h2>
+            <ul>
+              <li>Saved the company approximately $6,500 over nine months by strategically recruiting, implementing, and training a data entry team to tackle administrative roles</li>
+              <li>Earned a job search customer satisfaction rate of up to 97% and a near-perfect monthly retention rate</li>
+              <li>Researched industrial labor force trends to pinpoint clusters of prospective customers</li>
+              <li>Leveraged technology for data analysis, ease of communication, and process optimization</li>
+            </ul>
+          </div>
+          <div id="theglobalredirect">
+            <h1>The Global Redirect</h1>
+            <h2>Tech used: Node.js, Express, Cheerio, Jade</h2>
+            <h2><a href="https://the-global-redirect.herokuapp.com" target="_blank">Live demo</a></h2>
+            <h4>The world is in your hands. Look around. Click on a marker. See what's new in another part of the globe.</h4>
+          </div>
+          <div id="knowyouropenings">
+            <h1>Know Your Openings</h1>
+            <h2>Tech used: HTML, CSS, JavaScript</h2>
+            <h2><a href="https://aditya-tech.github.io/know-your-openings" target="_blank">Live demo</a></h2>
+            <h4>App is designed to help serious chess players memorize opening lines.</h4>
           </div>
         </div>
       </div>
-
     </div>
-
-
     <br>
     <br>
-
-
-
-
   </body>
 
 </html>

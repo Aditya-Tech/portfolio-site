@@ -77,6 +77,14 @@ body {
   cursor: pointer;
 }
 
+#allscriptsinfotext {
+  cursor: pointer;
+}
+
+#fridaydinfotext {
+  cursor: pointer;
+}
+
 .link:hover {
   color:#F9C658;
   font-size:105%;
@@ -89,8 +97,22 @@ body {
   border: solid ;
   background: rgba(0, 0, 0, 0.5);
   animation: 1s ease-out 0s 1 slideInFromRight;
-  height:400px;
+  height: 400px;
+  overflow: auto;
   z-index: 0;
+}
+
+.side-panel::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+.side-panel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.side-panel::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid slategrey;
 }
 
 #panel-text {
@@ -120,6 +142,15 @@ body {
   float:right;
 }
 
+#closebutton {
+  cursor: pointer;
+}
+
+#x-button {
+  z-index: 1;
+  color:white;
+}
+
 .row {
   margin:5px;
 }
@@ -138,5 +169,25 @@ body {
 }
 
 #allscripts {
+  display:none;
+}
+
+#fridayd {
+  display:none;
+}
+
+#theglobalredirecttext {
+  cursor:pointer;
+}
+
+#knowyouropeningstext {
+  cursor:pointer;
+}
+
+#theglobalredirect {
+  display:none;
+}
+
+#knowyouropenings {
   display:none;
 }
