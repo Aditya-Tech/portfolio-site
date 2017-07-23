@@ -1,12 +1,28 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid slategrey;
+}
 
 .code {
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
 }
 
-
 body {
   background-color: #31343F;
+  font-size:25px;
 }
 
 .container p, h1 {
@@ -25,10 +41,102 @@ body {
   color: #B9D4F5;
 }
 
+.nest0 {
+  float:left;
+}
+
 .nest1 {
   margin-left: 40px;
 }
 
 .nest2 {
   margin-left: 80px;
+}
+
+.nest3 {
+  margin-left: 120px;
+}
+
+.portfoliosite {
+  overflow:hidden;
+}
+
+.linenumber {
+  color:#646a82;
+}
+
+.link: {
+  color:#B9D4F5;
+  cursor: pointer;
+  font-size:100%;
+   -webkit-transition: color 2s;
+   -webkit-transition: font-size 2s;
+}
+
+#degreeinfotext {
+  cursor: pointer;
+}
+
+.link:hover {
+  color:#F9C658;
+  font-size:105%;
+  /* HOVER ON */
+   -webkit-transition: color 0.75s;
+   -webkit-transition: font-size 0.75s;
+}
+
+.side-panel {
+  border: solid ;
+  background: rgba(0, 0, 0, 0.5);
+  animation: 1s ease-out 0s 1 slideInFromRight;
+  height:400px;
+  z-index: 0;
+}
+
+#panel-text {
+  z-index: 1;
+  color:white;
+}
+
+.attr {
+  color:#80B807;
+}
+
+.from {
+  color:#EE9341;
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateY(-100%);
+    /*transform: rotate(90deg);*/
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.closed-side-panel {
+  display:none;
+  float:right;
+}
+
+.row {
+  margin:5px;
+}
+/*p {
+  margin:0 0 10px;
+}*/
+
+#open-dropdown-img {
+  height:20%;
+  width:20%;
+  float:right;
+}
+
+#coursework {
+  display:none;
+}
+
+#allscripts {
+  display:none;
 }

@@ -1,0 +1,12 @@
+<Person>  developer
+<Name> aditya paruchuri </Name>
+<Email>
+<Personal> adityasparuchuri@gmail.com </Personal>
+<School> ap376@duke.edu </School>
+</Email>
+<Phone> (803) 804-6725 </Phone>
+<Projects>
+<Project> The Global Redirect </Project>
+<Project> Know Your Openings </Project>
+</Projects>
+</Person>

@@ -1,55 +1,170 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aditya Paruchuri</title>
-    <link href="main.css" rel="stylesheet">
     <script src="jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
+    <script src="scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="scrollbar/jquery.mCustomScrollbar.css">
   </head>
 
   <body>
-    <div class="code">
-      <div id="person" class="container">
-        <h1>
-          <p class="tag">&lt;</p><p class="tagname">Person</p><p class="tag">&gt;</p>
-          <p id="role" class="htmltext">&nbsp;developer&nbsp;&nbsp;</p>
-        </h1>
+    <div class="row">
+
+      <div class="code col-md-8">
+        <div id="person" class="container nest0">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Person</p><p class="tag">&gt;</p>
+            <p id="role" class="htmltext">&nbsp;developer&nbsp;&nbsp;</p>
+          </p>
+        </div>
+        <div id="name" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Name</p><p class="tag">&gt;</p>
+            <p class="htmltext"> aditya paruchuri </p>
+            <p class="tag">&lt;/</p><p class="tagname">Name</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+        <div id="email" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Email</p><p class="tag">&gt;</p>
+              <div id="personalemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">Home</p><p class="tag">&gt;</p>
+                  <a href="mailto:adityasparuchuri@gmail.com" style="text-decoration:none;"><p class="htmltext link"> adityasparuchuri@gmail.com </p></a>
+                <p class="tag">&lt;/</p><p class="tagname">Home</p><p class="tag">&gt;</p>
+              </div>
+              <div id="schoolemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">School</p><p class="tag">&gt;</p>
+                  <a href="mailto:ap376@duke.edu" style="text-decoration:none;"><p class="htmltext link"> ap376@duke.edu </p></a>
+                <p class="tag">&lt;/</p><p class="tagname">School</p><p class="tag">&gt;</p>
+              </div>
+            <p class="tag">&lt;/</p><p class="tagname">Email</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+        <div id="phone" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Phone</p><p class="tag">&gt;</p>
+            <p class="htmltext"> (803) 804-6725 </p>
+            <p class="tag">&lt;/</p><p class="tagname">Phone</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+
+        <!-- <div id="tech" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Technologies</p><p class="tag">&gt;</p>
+              <div id="languages" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">School</p><p class="tag">&gt;</p>
+                  <a href="mailto:ap376@duke.edu" style="text-decoration:none;"><p class="htmltext"> ap376@duke.edu </p></a>
+                <p class="tag">&lt;/</p><p class="tagname">School</p><p class="tag">&gt;</p>
+              </div>
+            <p class="tag">&lt;/</p><p class="tagname">Technologies</p><p class="tag">&gt;</p>
+          </p>
+        </div> -->
+
+
+        <div id="education" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Education</p><p class="tag">&gt;</p>
+              <div id="college" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">College </p><p class="from">from</p><p class="tag">=</p><p class="attr">"Aug 2016" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"May 2020"</p><p class="tag">&gt;</p>
+                  <p class="htmltext"> Duke University </p>
+                  <div id="degreeinfo" class="nest3">
+                    <p class="tag">&lt;</p><p class="tagname">Degree</p><p class="tag">&gt;</p>
+                      <p class="htmltext link" id="degreeinfotext" onclick="showCoursework();"> B.S. Computer Science </p>
+                    <p class="tag">&lt;/</p><p class="tagname">Degree</p><p class="tag">&gt;</p>
+                  </div>
+                  <div id="minorinfo" class="nest3">
+                    <p class="tag">&lt;</p><p class="tagname">Minor</p><p class="tag">&gt;</p>
+                      <p class="htmltext"> History </p>
+                    <p class="tag">&lt;/</p><p class="tagname">Minor</p><p class="tag">&gt;</p>
+                  </div>
+                <p class="tag">&lt;/</p><p class="tagname">College</p><p class="tag">&gt;</p>
+              </div>
+            <p class="tag">&lt;/</p><p class="tagname">Education</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+        <div id="experience" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Experience</p><p class="tag">&gt;</p>
+              <div id="personalemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">Work  </p><p class="from">from</p><p class="tag">=</p><p class="attr">"May 2017" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"Aug 2017"</p></p><p class="tag">&gt;</p>
+                  <p class="htmltext link" id="allscriptsinfo" onclick="showAllscriptsInfo();"> Allscripts </p>
+                <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
+              </div>
+              <div id="schoolemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">Work  </p><p class="from">from</p><p class="tag">=</p><p class="attr">"Aug 2015" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"Current"</p></p><p class="tag">&gt;</p>
+                  <p class="htmltext link"> Fridayd </p>
+                <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
+              </div>
+            <p class="tag">&lt;/</p><p class="tagname">Experience</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+        <div id="projects" class="container nest1">
+          <p>
+            <p class="tag">&lt;</p><p class="tagname">Projects</p><p class="tag">&gt;</p>
+              <div id="personalemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">Project</p><p class="tag">&gt;</p>
+                  <a href="https://the-global-redirect.herokuapp.com" style="text-decoration:none;"><p class="htmltext link"> The Global Redirect </p></a>
+                <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
+              </div>
+              <div id="schoolemail" class="nest2">
+                <p class="tag">&lt;</p><p class="tagname">Project</p><p class="tag">&gt;</p>
+                  <a href="https://aditya-tech.github.io/know-your-openings" style="text-decoration:none;"><p class="htmltext link"> Know Your Openings </p></a>
+                <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
+              </div>
+            <p class="tag">&lt;/</p><p class="tagname">Projects</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+        <div id="person" class="container nest0">
+          <p>
+            <p class="tag">&lt;/</p><p class="tagname">Person</p><p class="tag">&gt;</p>
+          </p>
+        </div>
+
       </div>
-      <div id="name" class="container nest1">
-        <h1>
-          <p class="tag">&lt;</p><p class="tagname">Name</p><p class="tag">&gt;</p>
-          <p class="htmltext"> aditya paruchuri </p>
-          <p class="tag">&lt;/</p><p class="tagname">Name</p><p class="tag">&gt;</p>
-        </h1>
+
+      <div id="closed-side-panel" class="closed-side-panel col-md-4">
+        <img id="open-dropdown-img" src="open-dropdown.png" onclick="openSidePanel();"/>
       </div>
-      <div id="email" class="container nest1">
-        <h1>
-          <p class="tag">&lt;</p><p class="tagname">Email</p><p class="tag">&gt;</p>
-            <div id="personalemail" class="nest2">
-              <p class="tag">&lt;</p><p class="tagname">Personal</p><p class="tag">&gt;</p>
-                <a href="mailto:adityasparuchuri@gmail.com" style="text-decoration:none;"><p class="htmltext"> adityasparuchuri@gmail.com </p></a>
-              <p class="tag">&lt;/</p><p class="tagname">Personal</p><p class="tag">&gt;</p>
-            </div>
-            <div id="schoolemail" class="nest2">
-              <p class="tag">&lt;</p><p class="tagname">School</p><p class="tag">&gt;</p>
-                <a href="mailto:ap376@duke.edu" style="text-decoration:none;"><p class="htmltext"> ap376@duke.edu </p></a>
-              <p class="tag">&lt;/</p><p class="tagname">School</p><p class="tag">&gt;</p>
-            </div>
-          <p class="tag">&lt;/</p><p class="tagname">Email</p><p class="tag">&gt;</p>
-        </h1>
+
+
+      <div id="side-panel" class="side-panel col-md-4">
+        <div id="closebutton" style="float:right;" onclick="hideSidePanel();">
+          <p>X</p>
+        </div>
+        <div id="panel-text" class="panel-text">
+
+          <div id="intro">
+            Hi! My name is Aditya!
+          </div>
+          <div id="coursework">
+            <h2>Relevant Coursework:</h2>
+            <ul>
+              <li>Data Structures and Algorithms</li>
+              <li>Computer Architecture</li>
+              <li>Intro to Databases</li>
+            </ul>
+          </div>
+          <div id="allscripts">
+            <h2>test</h2>
+          </div>
+        </div>
       </div>
-      <div id="phone" class="container nest1">
-        <h1>
-          <p class="tag">&lt;</p><p class="tagname">Phone</p><p class="tag">&gt;</p>
-          <p class="htmltext"> (803) 804-6725 </p>
-          <p class="tag">&lt;/</p><p class="tagname">Phone</p><p class="tag">&gt;</p>
-        </h1>
-      </div>
-      <div id="person" class="container">
-        <h1>
-          <p class="tag">&lt;/</p><p class="tagname">Person</p><p class="tag">&gt;</p>
-        </h1>
-      </div>
+
     </div>
+
+
+    <br>
+    <br>
+
+
+
 
   </body>
 
