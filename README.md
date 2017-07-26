@@ -1,5 +1,5 @@
 # Portfolio Site
-CURRENT STATUS: In Development
+CURRENT STATUS: Deployed
 
 It's about time I put together a portfolio website, so voila! 
 
