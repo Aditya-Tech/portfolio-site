@@ -3,6 +3,9 @@ var current = "#intro"
 const roles = ["\xa0developer\xa0\xa0", "\xa0designer\xa0\xa0\xa0", "entrepreneur"];
 
 $(document).ready(function() {
+
+  document.onkeydown = getKey;
+  $.notify("Do not press this button", "info", {position:"center"});
   setInterval(function() {
     $("#role").fadeOut(function() {
       $(this).text(roles[i]);
@@ -13,6 +16,17 @@ $(document).ready(function() {
     }).fadeIn();
   }, 2000)
 });
+
+function getKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '82') {
+        alert("R pressed")
+    }
+
+
+}
 
 function hideCurrent(cb) {
   $(current).fadeOut(cb);
