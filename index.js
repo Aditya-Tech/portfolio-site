@@ -1,11 +1,11 @@
 var i = 1;
-var current = "#intro"
-const roles = ["\xa0developer\xa0\xa0", "\xa0designer\xa0\xa0\xa0", "entrepreneur"];
+var current;
+const roles = ["\xa0Developer\xa0\xa0", "\xa0Designer\xa0\xa0\xa0", "Entrepreneur"];
 
 $(document).ready(function() {
 
-  document.onkeydown = getKey;
-  $.notify("Do not press this button", "info", {position:"center"});
+  //document.onkeydown = getKey;
+
   setInterval(function() {
     $("#role").fadeOut(function() {
       $(this).text(roles[i]);
@@ -16,72 +16,57 @@ $(document).ready(function() {
     }).fadeIn();
   }, 2000)
 });
+//
+// function getKey(e) {
+//
+//     e = e || window.event;
+//
+//     if (e.keyCode == '82') {
+//         alert("R pressed")
+//     }
+//
+//
+// }
 
-function getKey(e) {
 
-    e = e || window.event;
-
-    if (e.keyCode == '82') {
-        alert("R pressed")
-    }
-
-
-}
-
-function hideCurrent(cb) {
-  $(current).fadeOut(cb);
-}
-
-function hideSidePanel() {
-  $("#side-panel").slideUp(function() {
-    $("#closed-side-panel").show();
-  });
-}
-
-function openSidePanel() {
-  $("#closed-side-panel").fadeOut(function() {
-    $("#side-panel").show();
-  });
+function hideSidePanel(cur) {
+  console.log("Closed")
+  $('#' + cur).fadeOut(function() {
+    $('#' + cur + "-panel").slideUp();
+  })
 }
 
 function showCoursework() {
-  hideCurrent(function() {
-    current = "#coursework";
-    $(current).fadeIn();
-  })
+  current = "#coursework";
+  $("#coursework-panel").slideDown(function() {
+    $("#coursework").fadeIn();
+  });
 }
 
 function showAllscriptsInfo() {
-  hideCurrent(function() {
-    current = "#allscripts";
-    $(current).fadeIn();
-  })
+  current = "#allscripts";
+  $("#allscripts-panel").slideDown(function() {
+    $("#allscripts").fadeIn();
+  });
 }
 
 function showFridaydInfo() {
-  hideCurrent(function() {
-    current = "#fridayd";
-    $(current).fadeIn();
-  })
-}
-
-function showIntro() {
-  hideCurrent(function() {
-    current = "#intro";
-    $(current).fadeIn();
-  })
+  current = "#fridayd";
+  $("#fridayd-panel").slideDown(function() {
+    $("#fridayd").fadeIn();
+  });
 }
 
 function showProj1() {
-  hideCurrent(function() {
-    current = "#theglobalredirect";
-    $(current).fadeIn();
-  })
+  current = "#theglobalredirect";
+  $("#theglobalredirect-panel").slideDown(function() {
+    $("#theglobalredirect").fadeIn();
+  });
 }
 
 function showProj2() {
-  hideCurrent(function() {
-    current = "#knowyouropenings";
-    $(current).fadeIn();
-  })
+  current = "#knowyouropenings";
+  $("#knowyouropenings-panel").slideDown(function() {
+    $("#knowyouropenings").fadeIn();
+  });
 }

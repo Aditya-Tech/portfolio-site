@@ -21,7 +21,7 @@
         <div id="person" class="container nest0">
           <p>
             <p class="tag">&lt;</p><p class="tagname">Person</p><p class="tag">&gt;</p>
-            <p id="role" class="htmltext">&nbsp;developer&nbsp;&nbsp;</p>
+            <p id="role" class="htmltext">&nbsp;Developer&nbsp;&nbsp;</p>
           </p>
         </div>
         <div id="name" class="container nest1">
@@ -54,20 +54,6 @@
             <p class="tag">&lt;/</p><p class="tagname">Phone</p><p class="tag">&gt;</p>
           </p>
         </div>
-
-        <!-- <div id="tech" class="container nest1">
-          <p>
-            <p class="tag">&lt;</p><p class="tagname">Technologies</p><p class="tag">&gt;</p>
-              <div id="languages" class="nest2">
-                <p class="tag">&lt;</p><p class="tagname">School</p><p class="tag">&gt;</p>
-                  <a href="mailto:ap376@duke.edu" style="text-decoration:none;"><p class="htmltext"> ap376@duke.edu </p></a>
-                <p class="tag">&lt;/</p><p class="tagname">School</p><p class="tag">&gt;</p>
-              </div>
-            <p class="tag">&lt;/</p><p class="tagname">Technologies</p><p class="tag">&gt;</p>
-          </p>
-        </div> -->
-
-
         <div id="education" class="container nest1">
           <p>
             <p class="tag">&lt;</p><p class="tagname">Education</p><p class="tag">&gt;</p>
@@ -78,6 +64,21 @@
                     <p class="tag">&lt;</p><p class="tagname">Degree</p><p class="tag">&gt;</p>
                       <p class="htmltext link" id="degreeinfotext" onclick="showCoursework();"> B.S. Computer Science </p>
                     <p class="tag">&lt;/</p><p class="tagname">Degree</p><p class="tag">&gt;</p>
+                  </div>
+                  <div id="coursework-panel" class="side-panel">
+                    <div id="closebutton" style="float:right;" onclick="hideSidePanel('coursework');">
+                      <img id="x-button" src="x-button.png" />
+                    </div>
+                    <div id="coursework">
+                      <div id="panel-text" class="panel-text">
+                        <h2>Relevant Coursework:</h2>
+                        <ul>
+                          <li>Data Structures and Algorithms</li>
+                          <li>Computer Architecture</li>
+                          <li>Intro to Databases</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div id="minorinfo" class="nest3">
                     <p class="tag">&lt;</p><p class="tagname">Minor</p><p class="tag">&gt;</p>
@@ -97,10 +98,46 @@
                   <p class="htmltext link" id="allscriptsinfotext" onclick="showAllscriptsInfo();"> Allscripts </p>
                 <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
               </div>
+              <div id="allscripts-panel" class="side-panel">
+                <div id="closebutton" style="float:right;" onclick="hideSidePanel('allscripts');">
+                  <img id="x-button" src="x-button.png" />
+                </div>
+                <div id="allscripts">
+                  <div id="panel-text" class="panel-text">
+                    <h1>Allscripts</h1>
+                    <h2>Software Engineer Intern,</h2>
+                    <h2>TouchWorks EHR Team</h2>
+                    <a href="Final Presentation.pptx" download><h2>Final Presentation</h2></a>
+                    <h3>Tech used: JavaScript, Python, HTML, CSS, ASP.NET MVC 5, XML, XSLT, AngularJS</h3>
+                    <ul>
+                      <li>Developed a custom XML to HTML converter tool and test suite for TouchWork’s note feature</li>
+                      <li>Converted the Prenatal module’s admin portal from Silverlight to HTML, CSS, and JavaScript</li>
+                      <li>Gave biweekly product demos to the solutions management dept. and took part in daily scrums</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <div id="schoolemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Work  </p><p class="from">from</p><p class="tag">=</p><p class="attr">"Aug 2015" </p><p class="from">to</p><p class="tag">=</p><p class="attr">"Current"</p></p><p class="tag">&gt;</p>
                   <p class="htmltext link" id="fridaydinfotext" onclick="showFridaydInfo();"> Fridayd </p>
                 <p class="tag">&lt;/</p><p class="tagname">Work</p><p class="tag">&gt;</p>
+              </div>
+              <div id="fridayd-panel" class="side-panel">
+                <div id="closebutton" style="float:right;" onclick="hideSidePanel('fridayd');">
+                  <img id="x-button" src="x-button.png" />
+                </div>
+                <div id="fridayd">
+                  <div id="panel-text" class="panel-text">
+                    <h1>Fridayd</h1>
+                    <h2>Business Operations Specialist</h2>
+                    <ul>
+                      <li>Saved the company approximately $6,500 over nine months by strategically recruiting, implementing, and training a data entry team to tackle administrative roles</li>
+                      <li>Earned a job search customer satisfaction rate of up to 97% and a near-perfect monthly retention rate</li>
+                      <li>Researched industrial labor force trends to pinpoint clusters of prospective customers</li>
+                      <li>Leveraged technology for data analysis, ease of communication, and process optimization</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             <p class="tag">&lt;/</p><p class="tagname">Experience</p><p class="tag">&gt;</p>
           </p>
@@ -113,10 +150,36 @@
                   <p class="htmltext link" id="theglobalredirecttext" onclick="showProj1();"> The Global Redirect </p>
                 <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
               </div>
+              <div id="theglobalredirect-panel" class="side-panel">
+                <div id="closebutton" style="float:right;" onclick="hideSidePanel('theglobalredirect');">
+                  <img id="x-button" src="x-button.png" />
+                </div>
+                <div id="theglobalredirect">
+                  <div id="panel-text" class="panel-text">
+                    <h1>The Global Redirect</h1>
+                    <h2>Tech used: Node.js, Express, Cheerio, Jade</h2>
+                    <h2><a href="https://the-global-redirect.herokuapp.com" target="_blank">Live demo</a></h2>
+                    <h4>The world is in your hands. Look around. Click on a marker. See what's new in another part of the globe.</h4>
+                  </div>
+                </div>
+              </div>
               <div id="schoolemail" class="nest2">
                 <p class="tag">&lt;</p><p class="tagname">Project</p><p class="tag">&gt;</p>
                   <p class="htmltext link" id="knowyouropeningstext" onclick="showProj2();"> Know Your Openings </p>
                 <p class="tag">&lt;/</p><p class="tagname">Project</p><p class="tag">&gt;</p>
+              </div>
+              <div id="knowyouropenings-panel" class="side-panel">
+                <div id="closebutton" style="float:right;" onclick="hideSidePanel('knowyouropenings');">
+                  <img id="x-button" src="x-button.png" />
+                </div>
+                <div id="knowyouropenings">
+                  <div id="panel-text" class="panel-text">
+                    <h1>Know Your Openings</h1>
+                    <h2>Tech used: HTML, CSS, JavaScript</h2>
+                    <h2><a href="https://aditya-tech.github.io/know-your-openings" target="_blank">Live demo</a></h2>
+                    <h4>App is designed to help serious chess players memorize opening lines.</h4>
+                  </div>
+                </div>
               </div>
             <p class="tag">&lt;/</p><p class="tagname">Projects</p><p class="tag">&gt;</p>
           </p>
@@ -128,67 +191,7 @@
         </div>
 
       </div>
-
-      <div id="closed-side-panel" class="closed-side-panel col-md-4">
-        <img id="open-dropdown-img" src="open-dropdown.png" onclick="openSidePanel();"/>
-      </div>
-
-
-      <div id="side-panel" class="side-panel col-lg-4">
-        <div id="closebutton" style="float:right;" onclick="hideSidePanel();">
-          <p id="x-button">X</p>
-        </div>
-        <div id="panel-text" class="panel-text">
-
-          <div id="intro">
-            Hi! My name is Aditya!
-          </div>
-          <div id="coursework" style="display:none;">
-            <h2>Relevant Coursework:</h2>
-            <ul>
-              <li>Data Structures and Algorithms</li>
-              <li>Computer Architecture</li>
-              <li>Intro to Databases</li>
-            </ul>
-          </div>
-          <div id="allscripts" style="display:none;">
-            <h1>Allscripts</h1>
-            <h2>Software Engineer Intern,</h2>
-            <h2>TouchWorks EHR Team</h2>
-            <a href="Final Presentation.pptx" download><h2>Final Presentation</h2></a>
-            <h3>Tech used: JavaScript, Python, HTML, CSS, ASP.NET MVC 5, XML, XSLT, AngularJS</h3>
-            <ul>
-              <li>Developed a custom XML to HTML converter tool and test suite for TouchWork’s note feature</li>
-              <li>Converted the Prenatal module’s admin portal from Silverlight to HTML, CSS, and JavaScript</li>
-              <li>Gave biweekly product demos to the solutions management dept. and took part in daily scrums</li>
-            </ul>
-          </div>
-          <div id="fridayd" style="display:none;">
-            <h1>Fridayd</h1>
-            <h2>Business Operations Specialist</h2>
-            <ul>
-              <li>Saved the company approximately $6,500 over nine months by strategically recruiting, implementing, and training a data entry team to tackle administrative roles</li>
-              <li>Earned a job search customer satisfaction rate of up to 97% and a near-perfect monthly retention rate</li>
-              <li>Researched industrial labor force trends to pinpoint clusters of prospective customers</li>
-              <li>Leveraged technology for data analysis, ease of communication, and process optimization</li>
-            </ul>
-          </div>
-          <div id="theglobalredirect" style="display:none;">
-            <h1>The Global Redirect</h1>
-            <h2>Tech used: Node.js, Express, Cheerio, Jade</h2>
-            <h2><a href="https://the-global-redirect.herokuapp.com" target="_blank">Live demo</a></h2>
-            <h4>The world is in your hands. Look around. Click on a marker. See what's new in another part of the globe.</h4>
-          </div>
-          <div id="knowyouropenings" style="display:none;">
-            <h1>Know Your Openings</h1>
-            <h2>Tech used: HTML, CSS, JavaScript</h2>
-            <h2><a href="https://aditya-tech.github.io/know-your-openings" target="_blank">Live demo</a></h2>
-            <h4>App is designed to help serious chess players memorize opening lines.</h4>
-          </div>
-        </div>
-      </div>
     </div>
-    <br>
     <br>
   </body>
 
